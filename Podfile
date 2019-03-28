@@ -8,4 +8,5 @@ target 'EverydayNASA' do
 
 	pod 'Alamofire’, '4.5.1'
   	pod 'SwiftyJSON’, '3.1.4'
+	pod 'NVActivityIndicatorView', '4.0.0'
 end

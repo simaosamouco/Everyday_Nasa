@@ -282,7 +282,7 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x2X-ds-wGs">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x2X-ds-wGs">
                                                 <rect key="frame" x="10" y="510" width="355" height="700"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="700" id="FPl-CH-hbX"/>
@@ -291,19 +291,27 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yy9-vs-JaI">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="1200"/>
+                                                <color key="backgroundColor" red="0.15239800347222221" green="0.1716037326388889" blue="0.3041720920138889" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
                                         </subviews>
                                         <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="x2X-ds-wGs" firstAttribute="leading" secondItem="FUg-jX-yrK" secondAttribute="leading" constant="10" id="6Yb-pa-0nD"/>
                                             <constraint firstAttribute="trailing" secondItem="4wT-aF-OaV" secondAttribute="trailing" id="6iR-Ox-MaT"/>
+                                            <constraint firstItem="Yy9-vs-JaI" firstAttribute="leading" secondItem="FUg-jX-yrK" secondAttribute="leading" id="70p-W8-BJ9"/>
                                             <constraint firstItem="AMl-uC-akx" firstAttribute="top" secondItem="4wT-aF-OaV" secondAttribute="bottom" constant="30" id="7lc-4F-khv"/>
                                             <constraint firstItem="AMl-uC-akx" firstAttribute="leading" secondItem="FUg-jX-yrK" secondAttribute="leading" constant="10" id="C5u-16-cNF"/>
                                             <constraint firstItem="Thg-BV-WMj" firstAttribute="top" secondItem="AMl-uC-akx" secondAttribute="bottom" constant="10" id="GjI-Y9-hRh"/>
+                                            <constraint firstItem="Yy9-vs-JaI" firstAttribute="top" secondItem="FUg-jX-yrK" secondAttribute="top" id="J51-1T-HfL"/>
                                             <constraint firstAttribute="trailing" secondItem="x2X-ds-wGs" secondAttribute="trailing" constant="10" id="LFu-o7-g6t"/>
                                             <constraint firstItem="Thg-BV-WMj" firstAttribute="leading" secondItem="FUg-jX-yrK" secondAttribute="leading" id="NC3-r9-Rjh"/>
                                             <constraint firstItem="x2X-ds-wGs" firstAttribute="top" secondItem="Thg-BV-WMj" secondAttribute="bottom" constant="10" id="Pzk-Wh-FdI"/>
                                             <constraint firstAttribute="trailing" secondItem="Thg-BV-WMj" secondAttribute="trailing" id="Wjq-Ii-NFk"/>
                                             <constraint firstItem="4wT-aF-OaV" firstAttribute="top" secondItem="FUg-jX-yrK" secondAttribute="top" id="X0A-MC-ah2"/>
+                                            <constraint firstAttribute="bottom" secondItem="Yy9-vs-JaI" secondAttribute="bottom" id="X5p-SK-Vq3"/>
+                                            <constraint firstAttribute="trailing" secondItem="Yy9-vs-JaI" secondAttribute="trailing" id="bLU-nr-PWA"/>
                                             <constraint firstAttribute="height" constant="1200" id="d9a-Zk-Jfq"/>
                                             <constraint firstAttribute="trailing" secondItem="AMl-uC-akx" secondAttribute="trailing" constant="10" id="fAV-Gx-1fC"/>
                                             <constraint firstItem="4wT-aF-OaV" firstAttribute="leading" secondItem="FUg-jX-yrK" secondAttribute="leading" id="fso-7R-XMc"/>
@@ -334,13 +342,14 @@
                         <outlet property="dateLabel" destination="Thg-BV-WMj" id="1IN-xt-OCH"/>
                         <outlet property="explanationLabel" destination="x2X-ds-wGs" id="kDT-0s-Ecn"/>
                         <outlet property="image" destination="4wT-aF-OaV" id="yjf-q7-LWE"/>
+                        <outlet property="loadingView" destination="Yy9-vs-JaI" id="fE6-T8-UZz"/>
                         <outlet property="scrollView" destination="dRc-qw-pbO" id="q2r-Kh-wpx"/>
                         <outlet property="titleLabel" destination="AMl-uC-akx" id="MYO-RC-axX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kx8-6o-1OM" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="642" y="42"/>
+            <point key="canvasLocation" x="640.79999999999995" y="41.379310344827587"/>
         </scene>
     </scenes>
     <resources>
