@@ -14,12 +14,12 @@ class PictureDayViewController: UIViewController, NVActivityIndicatorViewable {
     
     //10,33+ 9,61
     
+    @IBOutlet weak var textViewEx: UITextView!
     @IBOutlet weak var loadingView: UIView!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
-    @IBOutlet weak var explanationLabel: UILabel!
     var activityload: NVActivityIndicatorView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +29,12 @@ class PictureDayViewController: UIViewController, NVActivityIndicatorViewable {
         ServiceHelper.shared.getPicOfTheDay(completinHandler: receiveInfo)
     }
     func receiveInfo(pictureRecebida: PictureOfTheDay){
+        
         navigationController?.setNavigationBarHidden(false, animated: true)
+        //navigationController?.navigationBar.barTintColor = UIColor(red: 39/255, green:44/255, blue: 78/255, alpha:1)
+        
+        //navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
+        //navigationController?.navigationBar.
         UIApplication.shared.endIgnoringInteractionEvents()
         stopAnimating()
         loadingView.isHidden = true
@@ -47,7 +52,8 @@ class PictureDayViewController: UIViewController, NVActivityIndicatorViewable {
         
         titleLabel.text = pictureRecebida.title
         dateLabel.text = pictureRecebida.date
-        explanationLabel.text = pictureRecebida.explanation
+        //explanationLabel.text = pictureRecebida.explanation
+        textViewEx.text = pictureRecebida.explanation
         
         
     }
@@ -59,7 +65,9 @@ class PictureDayViewController: UIViewController, NVActivityIndicatorViewable {
         
     }
     
-    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
     
     
     override func didReceiveMemoryWarning() {
