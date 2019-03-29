@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04DF8667224E349C00026B32 /* PerfilAsteroidViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DF8666224E349C00026B32 /* PerfilAsteroidViewController.swift */; };
 		04FB1D5B224CE5A30036E252 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB1D5A224CE5A30036E252 /* AppDelegate.swift */; };
 		04FB1D5D224CE5A30036E252 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB1D5C224CE5A30036E252 /* ViewController.swift */; };
 		04FB1D60224CE5A30036E252 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04FB1D5E224CE5A30036E252 /* Main.storyboard */; };
@@ -46,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04DF8666224E349C00026B32 /* PerfilAsteroidViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilAsteroidViewController.swift; sourceTree = "<group>"; };
 		04FB1D57224CE5A30036E252 /* EverydayNASA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EverydayNASA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04FB1D5A224CE5A30036E252 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04FB1D5C224CE5A30036E252 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -185,6 +187,7 @@
 				04FB1D92224CE6F40036E252 /* MenuViewController.swift */,
 				04FB1D91224CE6F40036E252 /* ListAsteroidViewController.swift */,
 				04FB1D94224CE6F40036E252 /* TableViewCell.swift */,
+				04DF8666224E349C00026B32 /* PerfilAsteroidViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -375,12 +378,14 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/iOSDropDown/iOSDropDown.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/iOSDropDown.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -402,6 +407,7 @@
 				04FB1D99224CF0FD0036E252 /* Asteroid.swift in Sources */,
 				04FB1D98224CF0D40036E252 /* TableViewCell.swift in Sources */,
 				04FB1D96224CF0CD0036E252 /* PictureDayViewController.swift in Sources */,
+				04DF8667224E349C00026B32 /* PerfilAsteroidViewController.swift in Sources */,
 				04FB1D5B224CE5A30036E252 /* AppDelegate.swift in Sources */,
 				04FB1D9A224CF0FF0036E252 /* AsteroidsResponse.swift in Sources */,
 				04FB1D9B224CF1020036E252 /* CloseApproach.swift in Sources */,

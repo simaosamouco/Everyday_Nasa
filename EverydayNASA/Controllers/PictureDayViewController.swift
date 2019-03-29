@@ -23,23 +23,17 @@ class PictureDayViewController: UIViewController, NVActivityIndicatorViewable {
     var activityload: NVActivityIndicatorView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        let rect = CGRect(x: 200,y: 200,width: 200,height: 200)
-        //loadingView.isHidden = true
+        navigationController?.setNavigationBarHidden(true, animated: true)
         
-        let size = CGSize(width:170, height:170)
-        startAnimating(size, message: "Loading", messageFont: UIFont(name: "Nasa", size: 40), type: NVActivityIndicatorType(rawValue: 30), color: UIColor.white, textColor: UIColor.white)
-        //startAnimating(size, message: "Getting your daily dose of Nasa ready ;)" , type: NVActivityIndicatorType(rawValue: 30), color: UIColor.white, textColor: UIColor.white)
-        
-        //self.view.backgroundColor = UIColor(patternImage: UIImage(named: "night_sky")!)
+        loadingAnimation()
         ServiceHelper.shared.getPicOfTheDay(completinHandler: receiveInfo)
     }
     func receiveInfo(pictureRecebida: PictureOfTheDay){
-        //activityload.stopAnimating()
+        navigationController?.setNavigationBarHidden(false, animated: true)
+        UIApplication.shared.endIgnoringInteractionEvents()
         stopAnimating()
-       //loadImg.isHidden = true
         loadingView.isHidden = true
         print(pictureRecebida.explanation)
-        
         let url = URL(string: pictureRecebida.url)
         do{
             let data =  try Data(contentsOf: url!)
@@ -57,7 +51,13 @@ class PictureDayViewController: UIViewController, NVActivityIndicatorViewable {
         
         
     }
-    
+    func loadingAnimation(){
+        UIApplication.shared.beginIgnoringInteractionEvents()
+        let rect = CGRect(x: 200,y: 200,width: 200,height: 200)
+        let size = CGSize(width:170, height:170)
+        startAnimating(size, message: "Loading", messageFont: UIFont(name: "Nasa", size: 40), type: NVActivityIndicatorType(rawValue: 30), color: UIColor.white, textColor: UIColor.white)
+        
+    }
     
     
     

@@ -7,22 +7,37 @@
 //
 
 import UIKit
+import NVActivityIndicatorView
 
-class ListAsteroidViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
+class ListAsteroidViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, NVActivityIndicatorViewable{
 
     @IBOutlet weak var mainTitleLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
+    var activityload: NVActivityIndicatorView!
+    var asteroidToSend: Asteroid!
+    
+    let screenSize: CGRect = UIScreen.main.bounds
+    let myView = UIView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height))
+    
     var asteroidsToUse: AsteroidsResonse!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
+        
+        loadingAnimation()
         ServiceHelper.shared.getAsteroidsOfTheDay(completinHandler: receiveInfo)
+        myView.isHidden = true
         
     }
     
     func receiveInfo(asteroidsReceived: AsteroidsResonse){
+        stopAnimating()
+        myView.isHidden = true
+        myView.removeFromSuperview()
+        
+        navigationController?.setNavigationBarHidden(false, animated: true)
         DispatchQueue.main.async {
             self.asteroidsToUse = asteroidsReceived
             print("miss distance kilometers:  \(asteroidsReceived.results[0].closeApproach[0].missDistance.kilometers)")
@@ -62,6 +77,32 @@ class ListAsteroidViewController: UIViewController, UITableViewDelegate, UITable
         }
         
         return cell
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        asteroidToSend = asteroidsToUse.results[indexPath.row]
+        performSegue(withIdentifier: "segueToPerfil", sender: indexPath)
+        /*let controller = segue.destination as? PerfilViewController
+        controller?.characterEscolhido = enviar*/
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "segueToPerfil" {
+            
+            let controller = segue.destination as? PerfilAsteroidViewController
+            controller?.asteroidReceived = asteroidToSend
+        }else if segue.identifier == "segueMenu"{
+            print("JINGLE BELLS")
+        }
+    }
+    
+    
+    func loadingAnimation(){
+        let size = CGSize(width:170, height:170)
+        startAnimating(size, message: "Loading", messageFont: UIFont(name: "Nasa", size: 40), type: NVActivityIndicatorType(rawValue: 30), color: UIColor.white, textColor: UIColor.white)
+       /* let screenSize: CGRect = UIScreen.main.bounds
+        let myView = UIView(frame: CGRect(x: 0, y: 0, width: screenSize.width, height: screenSize.height))
+        myView.backgroundColor = UIColor(red: 39/255, green:44/255, blue: 78/255, alpha:1)
+        self.view.addSubview(myView)*/
+        
     }
     
 }
