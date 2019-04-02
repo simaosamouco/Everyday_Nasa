@@ -10,4 +10,5 @@ target 'EverydayNASA' do
   	pod 'SwiftyJSON’, '3.1.4'
 	pod 'NVActivityIndicatorView', '4.0.0'
 	pod 'iOSDropDown'
+	pod 'SwiftGoogleTranslate'
 end

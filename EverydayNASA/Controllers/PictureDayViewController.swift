@@ -27,6 +27,9 @@ class PictureDayViewController: UIViewController, NVActivityIndicatorViewable {
         
         loadingAnimation()
         ServiceHelper.shared.getPicOfTheDay(completinHandler: receiveInfo)
+        let defaults = UserDefaults.standard
+        let lann = defaults.string(forKey: "Language")
+        print(lann)
     }
     func receiveInfo(pictureRecebida: PictureOfTheDay){
         
@@ -38,7 +41,7 @@ class PictureDayViewController: UIViewController, NVActivityIndicatorViewable {
         UIApplication.shared.endIgnoringInteractionEvents()
         stopAnimating()
         loadingView.isHidden = true
-        print(pictureRecebida.explanation)
+        //print(pictureRecebida.explanation)
         let url = URL(string: pictureRecebida.url)
         do{
             let data =  try Data(contentsOf: url!)

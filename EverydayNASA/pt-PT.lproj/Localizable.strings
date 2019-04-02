@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  EverydayNASA
+
+  Created by Simão Samouco on 02/04/2019.
+  Copyright © 2019 Simão Samouco. All rights reserved.
+*/
+"button_picday" = "Imagem do Dia";
+"button_lotsAsteroids" = "Asteroides Do Dia";

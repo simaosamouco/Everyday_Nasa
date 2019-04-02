@@ -10,14 +10,22 @@ import UIKit
 
 class MenuViewController: UIViewController {
 
+    @IBOutlet weak var lotsAsteroids: UIButton!
+    @IBOutlet weak var picDay: UIButton!
     let date = Date()
     let formatter = DateFormatter()
     override func viewDidLoad() {
         super.viewDidLoad()
+        let defaults = UserDefaults.standard
+        defaults.set("enn", forKey: "Language")
         //UIApplication.shared.statusBarStyle = UIColor(red: 1/255, green:18/255, blue: 35/255, alpha:1)
         
         changeStatusBar()
+        let x = NSLocalizedString("button_picday", comment: "")
+        picDay.setTitle(x, for: .normal)
         
+        let y = NSLocalizedString("button_lotsAsteroids", comment: "")
+        lotsAsteroids.setTitle(y, for: .normal)
         /*formatter.dateFormat = "yyyy-MM-dd"
         let result = formatter.string(from: date)
         print(result)*/

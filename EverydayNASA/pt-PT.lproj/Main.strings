@@ -1,0 +1,57 @@
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "AMl-uC-akx"; */
+"AMl-uC-akx.text" = "Title";
+
+/* Class = "UILabel"; text = "Miss Distance"; ObjectID = "AUe-0p-Wvl"; */
+"AUe-0p-Wvl.text" = "Miss Distance";
+
+/* Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "Ac5-Rl-vVt"; */
+"Ac5-Rl-vVt.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.";
+
+/* Class = "UIButton"; normalTitle = "Lots Of Asteroids"; ObjectID = "M2b-QZ-oZz"; */
+"M2b-QZ-oZz.normalTitle" = "Lots Of Asteroids";
+
+/* Class = "UILabel"; text = "Your daily dose of Asteroids ;)"; ObjectID = "MMM-ZN-gA7"; */
+"MMM-ZN-gA7.text" = "Your daily dose of Asteroids ;)";
+
+/* Class = "UILabel"; text = "Orbits Around"; ObjectID = "MzT-yF-4m0"; */
+"MzT-yF-4m0.text" = "Orbits Around";
+
+/* Class = "UILabel"; text = "Velocity"; ObjectID = "PRr-c4-JQn"; */
+"PRr-c4-JQn.text" = "Velocity";
+
+/* Class = "UILabel"; text = "Asteroid Name"; ObjectID = "Qne-jP-Pix"; */
+"Qne-jP-Pix.text" = "Asteroid Name";
+
+/* Class = "UILabel"; text = "Absolute Magnitude :"; ObjectID = "Qxn-bA-aR4"; */
+"Qxn-bA-aR4.text" = "Absolute Magnitude :";
+
+/* Class = "UILabel"; text = "absolute_magnetic"; ObjectID = "Sih-Rh-nDx"; */
+"Sih-Rh-nDx.text" = "absolute_magnetic";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Thg-BV-WMj"; */
+"Thg-BV-WMj.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Picture Of The Day"; ObjectID = "Y9N-8L-sGw"; */
+"Y9N-8L-sGw.normalTitle" = "Picture Of The Day";
+
+/* Class = "UILabel"; text = "km/sec"; ObjectID = "Z4A-7F-AvM"; */
+"Z4A-7F-AvM.text" = "km/sec";
+
+/* Class = "UILabel"; text = "Orbiting_body"; ObjectID = "apU-5j-cgl"; */
+"apU-5j-cgl.text" = "Orbiting_body";
+
+/* Class = "UILabel"; text = "ASTEROIDS"; ObjectID = "bAI-o3-DU8"; */
+"bAI-o3-DU8.text" = "ASTEROIDS";
+
+/* Class = "UIButton"; normalTitle = "Send Me to NASA"; ObjectID = "fnY-UJ-jPq"; */
+"fnY-UJ-jPq.normalTitle" = "Send Me to NASA";
+
+/* Class = "UILabel"; text = "Close Approach"; ObjectID = "hS7-7D-UAg"; */
+"hS7-7D-UAg.text" = "Close Approach";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "ulI-Gh-Suz"; */
+"ulI-Gh-Suz.text" = "Name";
+
+/* Class = "UILabel"; text = "Diameter"; ObjectID = "xoq-WB-1gg"; */
+"xoq-WB-1gg.text" = "Diameter";

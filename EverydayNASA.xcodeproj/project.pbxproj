@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		042978012253755E000F725C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 042978032253755E000F725C /* Localizable.strings */; };
+		045DFF32225267FA00D8B3D1 /* ColorsLolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045DFF31225267FA00D8B3D1 /* ColorsLolViewController.swift */; };
 		04DF8667224E349C00026B32 /* PerfilAsteroidViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DF8666224E349C00026B32 /* PerfilAsteroidViewController.swift */; };
 		04FB1D5B224CE5A30036E252 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB1D5A224CE5A30036E252 /* AppDelegate.swift */; };
 		04FB1D5D224CE5A30036E252 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB1D5C224CE5A30036E252 /* ViewController.swift */; };
@@ -47,6 +49,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		042977FB225373F7000F725C /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/Main.strings"; sourceTree = "<group>"; };
+		042977FC225373F7000F725C /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		042977FE22537451000F725C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		042978022253755E000F725C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		0429780422537565000F725C /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		045DFF31225267FA00D8B3D1 /* ColorsLolViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsLolViewController.swift; sourceTree = "<group>"; };
 		04DF8666224E349C00026B32 /* PerfilAsteroidViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilAsteroidViewController.swift; sourceTree = "<group>"; };
 		04FB1D57224CE5A30036E252 /* EverydayNASA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EverydayNASA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04FB1D5A224CE5A30036E252 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -138,6 +146,7 @@
 				04FB1D61224CE5A30036E252 /* Assets.xcassets */,
 				04FB1D63224CE5A30036E252 /* LaunchScreen.storyboard */,
 				04FB1D66224CE5A30036E252 /* Info.plist */,
+				042978032253755E000F725C /* Localizable.strings */,
 			);
 			path = EverydayNASA;
 			sourceTree = "<group>";
@@ -188,6 +197,7 @@
 				04FB1D91224CE6F40036E252 /* ListAsteroidViewController.swift */,
 				04FB1D94224CE6F40036E252 /* TableViewCell.swift */,
 				04DF8666224E349C00026B32 /* PerfilAsteroidViewController.swift */,
+				045DFF31225267FA00D8B3D1 /* ColorsLolViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -308,6 +318,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"pt-PT",
 			);
 			mainGroup = 04FB1D4E224CE5A30036E252;
 			productRefGroup = 04FB1D58224CE5A30036E252 /* Products */;
@@ -326,6 +337,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				042978012253755E000F725C /* Localizable.strings in Resources */,
 				04FB1D65224CE5A30036E252 /* LaunchScreen.storyboard in Resources */,
 				04FB1D62224CE5A30036E252 /* Assets.xcassets in Resources */,
 				04FB1D60224CE5A30036E252 /* Main.storyboard in Resources */,
@@ -377,6 +389,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-EverydayNASA/Pods-EverydayNASA-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftGoogleTranslate/SwiftGoogleTranslate.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/iOSDropDown/iOSDropDown.framework",
 			);
@@ -384,6 +397,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftGoogleTranslate.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/iOSDropDown.framework",
 			);
@@ -405,6 +419,7 @@
 				04FB1D5D224CE5A30036E252 /* ViewController.swift in Sources */,
 				04FB1D95224CF0B90036E252 /* MenuViewController.swift in Sources */,
 				04FB1D99224CF0FD0036E252 /* Asteroid.swift in Sources */,
+				045DFF32225267FA00D8B3D1 /* ColorsLolViewController.swift in Sources */,
 				04FB1D98224CF0D40036E252 /* TableViewCell.swift in Sources */,
 				04FB1D96224CF0CD0036E252 /* PictureDayViewController.swift in Sources */,
 				04DF8667224E349C00026B32 /* PerfilAsteroidViewController.swift in Sources */,
@@ -447,10 +462,21 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		042978032253755E000F725C /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				042978022253755E000F725C /* en */,
+				0429780422537565000F725C /* pt-PT */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		04FB1D5E224CE5A30036E252 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				04FB1D5F224CE5A30036E252 /* Base */,
+				042977FB225373F7000F725C /* pt-PT */,
+				042977FE22537451000F725C /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -459,6 +485,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				04FB1D64224CE5A30036E252 /* Base */,
+				042977FC225373F7000F725C /* pt-PT */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -470,6 +497,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -527,6 +555,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

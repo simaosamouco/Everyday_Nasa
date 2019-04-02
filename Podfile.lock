@@ -4,12 +4,14 @@ PODS:
   - NVActivityIndicatorView (4.0.0):
     - NVActivityIndicatorView/Presenter (= 4.0.0)
   - NVActivityIndicatorView/Presenter (4.0.0)
+  - SwiftGoogleTranslate (0.2.1)
   - SwiftyJSON (3.1.4)
 
 DEPENDENCIES:
   - Alamofire (= 4.5.1)
   - iOSDropDown
   - NVActivityIndicatorView (= 4.0.0)
+  - SwiftGoogleTranslate
   - SwiftyJSON (= 3.1.4)
 
 SPEC REPOS:
@@ -17,14 +19,16 @@ SPEC REPOS:
     - Alamofire
     - iOSDropDown
     - NVActivityIndicatorView
+    - SwiftGoogleTranslate
     - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
   iOSDropDown: 7a4cfc67d5166f319858747b63cd2f7760c4fb4b
   NVActivityIndicatorView: 54c9b93b6f25a4f467512680c0c90c09a1095cf2
+  SwiftGoogleTranslate: 96960d3548e800e15b347518afca546d2edc8519
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: 414baaa8fbb1c0e54409797388c4ae47d06dd2f4
+PODFILE CHECKSUM: db5ec9ea1ef2feb9c7b53fb72e9ff8ffbb3958f2
 
 COCOAPODS: 1.5.3

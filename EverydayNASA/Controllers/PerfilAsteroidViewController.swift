@@ -21,9 +21,18 @@ class PerfilAsteroidViewController: UIViewController {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var dropDown: DropDown!
     
+    let defaults = UserDefaults.standard
+   // let lann = defaults.string(forKey: "Language")
+    
     var asteroidReceived: Asteroid!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //defaults.set(1, forKey: "selectedIndexAux")
+         dropDown.selectedIndex = defaults.integer(forKey: "selectedIndexAux")
+        
+        
+        
         dropDown.placeholder = "Kilometers/hour | Meters"
         dropDown.didSelect(){_,_,_ in
             self.listDidDisappear()
@@ -51,9 +60,7 @@ class PerfilAsteroidViewController: UIViewController {
         }
         //diameterLabel.text = "Diameter between \(asteroidReceived.diameters.min_diameter_m) and \(asteroidReceived.diameters.max_diameter_m)"
         velocity.text = "Velocity : \(asteroidReceived.closeApproach[0].relativeVelocity.kilometersPerSecond)"
-        
-        
-        // Do any additional setup after loading the view.
+       
     }
 
     override func didReceiveMemoryWarning() {
@@ -72,7 +79,10 @@ class PerfilAsteroidViewController: UIViewController {
     }
     
     func listDidDisappear(){
+        defaults.set(dropDown.selectedIndex, forKey: "selectedIndexAux")
+        print(defaults.integer(forKey: "selectedIndexAux"))
         if(dropDown.selectedIndex == 0){
+            defaults.set(0, forKey: "selectedIndexAux")
             if let di_min = asteroidReceived.diameters.min_diameter_m {
                 if let di_max = asteroidReceived.diameters.max_diameter_m{
                     diameterLabel.text = "Diameter between \(di_min) and \(di_max) meters"
