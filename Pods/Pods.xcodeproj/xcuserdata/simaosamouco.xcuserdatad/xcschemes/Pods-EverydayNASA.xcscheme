@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D04E755B67174A309231D61A18C8EE6E"
+               BlueprintIdentifier = "E635C3BC8C84E7FF28BFC6DAB257936C"
                BuildableName = "Pods_EverydayNASA.framework"
                BlueprintName = "Pods-EverydayNASA"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -26,6 +26,7 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
@@ -36,6 +37,7 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      language = ""
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -45,7 +47,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D04E755B67174A309231D61A18C8EE6E"
+            BlueprintIdentifier = "E635C3BC8C84E7FF28BFC6DAB257936C"
             BuildableName = "Pods_EverydayNASA.framework"
             BlueprintName = "Pods-EverydayNASA"
             ReferencedContainer = "container:Pods.xcodeproj">

@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (4.5.1)
+  - DLRadioButton (1.4.12)
   - iOSDropDown (0.2.7)
   - NVActivityIndicatorView (4.0.0):
     - NVActivityIndicatorView/Presenter (= 4.0.0)
@@ -9,6 +10,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire (= 4.5.1)
+  - DLRadioButton (~> 1.4)
   - iOSDropDown
   - NVActivityIndicatorView (= 4.0.0)
   - SwiftGoogleTranslate
@@ -17,6 +19,7 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - DLRadioButton
     - iOSDropDown
     - NVActivityIndicatorView
     - SwiftGoogleTranslate
@@ -24,11 +27,12 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  DLRadioButton: d7c4e225ed0e8013cef7be61455230c7557ad7c1
   iOSDropDown: 7a4cfc67d5166f319858747b63cd2f7760c4fb4b
   NVActivityIndicatorView: 54c9b93b6f25a4f467512680c0c90c09a1095cf2
   SwiftGoogleTranslate: 96960d3548e800e15b347518afca546d2edc8519
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: db5ec9ea1ef2feb9c7b53fb72e9ff8ffbb3958f2
+PODFILE CHECKSUM: 831ce88575af08775a1b12f47cdcaa93c18d30f9
 
 COCOAPODS: 1.5.3

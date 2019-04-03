@@ -7,7 +7,25 @@
 		<key>EverydayNASA.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>6</integer>
+			<integer>7</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>04FB1D56224CE5A30036E252</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>04FB1D6A224CE5A30036E252</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>04FB1D75224CE5A30036E252</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

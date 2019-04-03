@@ -130,6 +130,17 @@
                                     <action selector="goToAsteroids:" destination="lBB-Cr-SiU" eventType="touchUpInside" id="dEO-pe-nu0"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NIz-c1-BGj">
+                                <rect key="frame" x="310" y="602" width="45" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="OKL-FE-gGM"/>
+                                    <constraint firstAttribute="height" constant="45" id="uoj-zR-ZOZ"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="settings_img4"/>
+                                <connections>
+                                    <action selector="goToSettings:" destination="lBB-Cr-SiU" eventType="touchUpInside" id="NXv-dV-SWc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -144,7 +155,9 @@
                             <constraint firstItem="6sS-oe-2hY" firstAttribute="bottom" secondItem="KEe-ue-Iak" secondAttribute="bottom" id="iTI-Mb-MSW"/>
                             <constraint firstItem="KEe-ue-Iak" firstAttribute="trailing" secondItem="M2b-QZ-oZz" secondAttribute="trailing" id="m16-tv-bRk"/>
                             <constraint firstItem="Y9N-8L-sGw" firstAttribute="trailing" secondItem="KEe-ue-Iak" secondAttribute="trailing" id="nUa-B9-T4R"/>
+                            <constraint firstItem="KEe-ue-Iak" firstAttribute="bottom" secondItem="NIz-c1-BGj" secondAttribute="bottom" constant="20" id="t6e-FH-eH8"/>
                             <constraint firstItem="sKh-FM-QYY" firstAttribute="leading" secondItem="KEe-ue-Iak" secondAttribute="leading" id="tvf-dS-Us4"/>
+                            <constraint firstItem="KEe-ue-Iak" firstAttribute="trailing" secondItem="NIz-c1-BGj" secondAttribute="trailing" constant="20" id="wQS-Ws-Guy"/>
                             <constraint firstItem="Y9N-8L-sGw" firstAttribute="leading" secondItem="KEe-ue-Iak" secondAttribute="leading" id="x6p-9j-2J7"/>
                             <constraint firstItem="6sS-oe-2hY" firstAttribute="trailing" secondItem="KEe-ue-Iak" secondAttribute="trailing" id="zds-3X-5m9"/>
                         </constraints>
@@ -160,11 +173,84 @@
                         <outlet property="picDay" destination="Y9N-8L-sGw" id="HlM-7B-k1Q"/>
                         <segue destination="tvV-Ph-icD" kind="show" identifier="segueToPic" id="rdF-fy-cm7"/>
                         <segue destination="iZu-2H-rb2" kind="show" identifier="goToAsteroids" id="Ov2-dY-V5B"/>
+                        <segue destination="kBz-uZ-Uba" kind="show" identifier="segueToSettings" id="cg9-Xa-oST"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HcR-bn-RkM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-961" y="-108"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="SfV-Gd-Iki">
+            <objects>
+                <viewController id="kBz-uZ-Uba" customClass="SettingsViewController" customModule="EverydayNASA" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gYr-UR-Aks">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nAU-FY-Ua2">
+                                <rect key="frame" x="0.0" y="64" width="375" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="Ral-th-2J2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Nasa" family="Nasa" pointSize="42"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Language" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bqS-yY-ejH">
+                                <rect key="frame" x="16" y="152" width="343" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Mze-Gs-alR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wgt-aR-1Fi">
+                                <rect key="frame" x="0.0" y="286" width="375" height="162"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="W0a-NQ-VUg">
+                                <rect key="frame" x="32" y="200" width="311" height="50"/>
+                                <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="qdE-YO-iGa">
+                                        <rect key="frame" x="0.0" y="0.0" width="311" height="51"/>
+                                        <segments>
+                                            <segment title="Portuguese"/>
+                                            <segment title="English"/>
+                                        </segments>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                        <connections>
+                                            <action selector="langChoice:" destination="kBz-uZ-Uba" eventType="valueChanged" id="K1b-Kw-f5j"/>
+                                        </connections>
+                                    </segmentedControl>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="74l-JE-Zjp"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.081586690670000003" green="0.1143350439" blue="0.22570529510000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="bqS-yY-ejH" firstAttribute="top" secondItem="nAU-FY-Ua2" secondAttribute="bottom" constant="8" id="2R2-jN-08I"/>
+                            <constraint firstItem="W0a-NQ-VUg" firstAttribute="top" secondItem="bqS-yY-ejH" secondAttribute="bottom" constant="8" id="8Dt-kg-ZNJ"/>
+                            <constraint firstItem="bqS-yY-ejH" firstAttribute="leading" secondItem="ALI-wz-C5y" secondAttribute="leading" constant="16" id="BEn-cd-G0Z"/>
+                            <constraint firstItem="nAU-FY-Ua2" firstAttribute="top" secondItem="ALI-wz-C5y" secondAttribute="top" id="ICR-mK-PdW"/>
+                            <constraint firstItem="nAU-FY-Ua2" firstAttribute="leading" secondItem="ALI-wz-C5y" secondAttribute="leading" id="OGg-3O-klF"/>
+                            <constraint firstItem="ALI-wz-C5y" firstAttribute="trailing" secondItem="nAU-FY-Ua2" secondAttribute="trailing" id="P8u-NP-D2U"/>
+                            <constraint firstItem="ALI-wz-C5y" firstAttribute="trailing" secondItem="bqS-yY-ejH" secondAttribute="trailing" constant="16" id="SMz-Y6-goE"/>
+                            <constraint firstItem="W0a-NQ-VUg" firstAttribute="leading" secondItem="ALI-wz-C5y" secondAttribute="leading" constant="32" id="TP2-qk-SW5"/>
+                            <constraint firstItem="ALI-wz-C5y" firstAttribute="trailing" secondItem="W0a-NQ-VUg" secondAttribute="trailing" constant="32" id="lIA-aP-a9h"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ALI-wz-C5y"/>
+                    </view>
+                    <connections>
+                        <outlet property="pickerView" destination="Wgt-aR-1Fi" id="MdK-8F-7sp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TeO-Kh-YwG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1770.4000000000001" y="737.18140929535241"/>
         </scene>
         <!--List Asteroid View Controller-->
         <scene sceneID="bfI-AT-Tfw">
@@ -555,5 +641,6 @@
     <resources>
         <image name="background_main" width="640" height="1138"/>
         <image name="nasa_logo" width="3400" height="1700"/>
+        <image name="settings_img4" width="192" height="192"/>
     </resources>
 </document>

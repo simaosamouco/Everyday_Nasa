@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BC1CAFF2685A7F7F4520C3753543D63B"
-               BlueprintName = "SwiftyJSON"
+               BlueprintIdentifier = "2167F32FCBD96C6161714849A9105BE9"
+               BlueprintName = "DLRadioButton"
                ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "SwiftyJSON.framework">
+               BuildableName = "DLRadioButton.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

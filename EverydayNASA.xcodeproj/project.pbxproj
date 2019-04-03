@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0419E4412253B24B00E7ADF4 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0419E4402253B24B00E7ADF4 /* SettingsViewController.swift */; };
 		042978012253755E000F725C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 042978032253755E000F725C /* Localizable.strings */; };
 		045DFF32225267FA00D8B3D1 /* ColorsLolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045DFF31225267FA00D8B3D1 /* ColorsLolViewController.swift */; };
 		04DF8667224E349C00026B32 /* PerfilAsteroidViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DF8666224E349C00026B32 /* PerfilAsteroidViewController.swift */; };
@@ -49,6 +50,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0419E4402253B24B00E7ADF4 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		042977FB225373F7000F725C /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/Main.strings"; sourceTree = "<group>"; };
 		042977FC225373F7000F725C /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		042977FE22537451000F725C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
@@ -198,6 +200,7 @@
 				04FB1D94224CE6F40036E252 /* TableViewCell.swift */,
 				04DF8666224E349C00026B32 /* PerfilAsteroidViewController.swift */,
 				045DFF31225267FA00D8B3D1 /* ColorsLolViewController.swift */,
+				0419E4402253B24B00E7ADF4 /* SettingsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -388,6 +391,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-EverydayNASA/Pods-EverydayNASA-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/DLRadioButton/DLRadioButton.framework",
 				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftGoogleTranslate/SwiftGoogleTranslate.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
@@ -396,6 +400,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DLRadioButton.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftGoogleTranslate.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
@@ -421,6 +426,7 @@
 				04FB1D99224CF0FD0036E252 /* Asteroid.swift in Sources */,
 				045DFF32225267FA00D8B3D1 /* ColorsLolViewController.swift in Sources */,
 				04FB1D98224CF0D40036E252 /* TableViewCell.swift in Sources */,
+				0419E4412253B24B00E7ADF4 /* SettingsViewController.swift in Sources */,
 				04FB1D96224CF0CD0036E252 /* PictureDayViewController.swift in Sources */,
 				04DF8667224E349C00026B32 /* PerfilAsteroidViewController.swift in Sources */,
 				04FB1D5B224CE5A30036E252 /* AppDelegate.swift in Sources */,

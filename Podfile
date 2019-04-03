@@ -11,4 +11,5 @@ target 'EverydayNASA' do
 	pod 'NVActivityIndicatorView', '4.0.0'
 	pod 'iOSDropDown'
 	pod 'SwiftGoogleTranslate'
+	pod 'DLRadioButton', '~> 1.4'
 end

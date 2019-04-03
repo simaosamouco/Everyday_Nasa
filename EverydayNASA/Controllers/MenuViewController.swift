@@ -15,10 +15,26 @@ class MenuViewController: UIViewController {
     let date = Date()
     let formatter = DateFormatter()
     override func viewDidLoad() {
-        super.viewDidLoad()
         let defaults = UserDefaults.standard
-        defaults.set("enn", forKey: "Language")
-        //UIApplication.shared.statusBarStyle = UIColor(red: 1/255, green:18/255, blue: 35/255, alpha:1)
+        //UserDefaults.standard.set("pt", forKey: "AppleLanguages")
+        //UserDefaults.standard.synchronize()
+        
+        /*
+        if defaults.string(forKey: "Language") == "enn"{
+            UserDefaults.standard.set("en", forKey: "AppleLanguages")
+            UserDefaults.standard.synchronize()
+        }else if defaults.string(forKey: "Language") == "ptt"{
+            UserDefaults.standard.set("pt", forKey: "AppleLanguages")
+            UserDefaults.standard.synchronize()
+        }*/
+        print(UserDefaults.standard.string(forKey: "AppleLanguages"))
+        
+        
+        
+        super.viewDidLoad()
+        //let defaults = UserDefaults.standard
+       // defaults.set("enn", forKey: "Language")
+        
         
         changeStatusBar()
         let x = NSLocalizedString("button_picday", comment: "")
@@ -26,11 +42,6 @@ class MenuViewController: UIViewController {
         
         let y = NSLocalizedString("button_lotsAsteroids", comment: "")
         lotsAsteroids.setTitle(y, for: .normal)
-        /*formatter.dateFormat = "yyyy-MM-dd"
-        let result = formatter.string(from: date)
-        print(result)*/
-        
-
     }
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
@@ -66,4 +77,7 @@ class MenuViewController: UIViewController {
         view.addSubview(statusBarView)
     }
     
+    @IBAction func goToSettings(_ sender: Any) {
+        performSegue(withIdentifier: "segueToSettings", sender: nil)
+    }
 }
