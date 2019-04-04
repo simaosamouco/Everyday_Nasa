@@ -29,8 +29,17 @@ class PictureDayViewController: UIViewController, NVActivityIndicatorViewable {
         ServiceHelper.shared.getPicOfTheDay(completinHandler: receiveInfo)
         let defaults = UserDefaults.standard
         let lann = defaults.string(forKey: "Language")
-        print(lann)
+        //print(lann)
+        self.navigationController?.navigationBar.isTranslucent = false;
+        
+        textViewEx.isEditable = false
+        
     }
+    
+    override func viewDidLayoutSubviews() {
+        self.navigationController?.navigationBar.isTranslucent = false;
+    }
+    
     func receiveInfo(pictureRecebida: PictureOfTheDay){
         
         navigationController?.setNavigationBarHidden(false, animated: true)

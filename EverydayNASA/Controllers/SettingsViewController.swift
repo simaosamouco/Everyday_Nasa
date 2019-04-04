@@ -12,6 +12,8 @@ import UIKit
 class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
    
+    @IBOutlet weak var settingsLabel: UILabel!
+    @IBOutlet weak var langChoiceEx: UISegmentedControl!
     @IBOutlet weak var pickerView: UIPickerView!
     var pickerData: [String] = [String]()
     let defaults = UserDefaults.standard
@@ -24,8 +26,19 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         self.pickerView.delegate = self
         self.pickerView.dataSource = self
         
-       pickerData = ["Kilometers/hour | Meters", "Miles/hour | Feet", "Kilometers/hour | Feet", "Miles/hour | Meters"]
+       
         
+        if UserDefaults.standard.integer(forKey: "segmentedControll") == 0{
+            pickerData = ["Kilometros/hora | Metros", "Milhas/hora | Feet", "Kilometros/hora | Feet", "Milhas/hora | Metros"]
+        }else if UserDefaults.standard.integer(forKey: "segmentedControll") == 1{
+            pickerData = ["Kilometers/hour | Meters", "Miles/hour | Feet", "Kilometers/hour | Feet", "Miles/hour | Meters"]
+        }
+        
+        
+        let y = NSLocalizedString("settings_label", comment: "")
+        settingsLabel.text = y
+        
+        langChoiceEx.selectedSegmentIndex = UserDefaults.standard.integer(forKey: "segmentedControll")
     }
 
     override func didReceiveMemoryWarning() {
@@ -67,6 +80,7 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     @IBAction func langChoice(_ sender: UISegmentedControl) {
         switch sender.selectedSegmentIndex {
         case 0:
+            UserDefaults.standard.set(0, forKey: "segmentedControll")
             UserDefaults.standard.set(nil, forKey: "AppleLanguages")
             UserDefaults.standard.synchronize()
             print("Default Language: PT")
@@ -75,6 +89,7 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
             print("primeira opção escolhida (PORTUGUESE)")*/
             break
         case 1:
+            UserDefaults.standard.set(1, forKey: "segmentedControll")
             UserDefaults.standard.set("en", forKey: "AppleLanguages")
             UserDefaults.standard.synchronize()
             print("Default Language: EN")
