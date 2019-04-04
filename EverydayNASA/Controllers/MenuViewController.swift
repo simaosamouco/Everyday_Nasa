@@ -57,6 +57,9 @@ class MenuViewController: UIViewController {
     }
     
     
+    @IBAction func goToChooseDate(_ sender: Any) {
+        performSegue(withIdentifier: "segueChooseDate", sender: self)
+    }
     @IBAction func goToAsteroids(_ sender: Any) {
         performSegue(withIdentifier: "goToAsteroids", sender: self)
     }

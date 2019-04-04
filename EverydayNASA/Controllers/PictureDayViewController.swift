@@ -21,12 +21,22 @@ class PictureDayViewController: UIViewController, NVActivityIndicatorViewable {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
     var activityload: NVActivityIndicatorView!
+    
+    var yearReceived:String!
+    var monthReceived:String!
+    var dayReceived: String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.setNavigationBarHidden(true, animated: true)
         
         loadingAnimation()
-        ServiceHelper.shared.getPicOfTheDay(completinHandler: receiveInfo)
+        if yearReceived == nil{
+            ServiceHelper.shared.getPicOfTheDay(completinHandler: receiveInfo)
+        }else{
+            ServiceHelper.shared.getAsteroidsOfTheSelectedDay(day: dayReceived, month: monthReceived, year: yearReceived, completinHandler: receiveInfo)
+        }
+        
         let defaults = UserDefaults.standard
         let lann = defaults.string(forKey: "Language")
         //print(lann)

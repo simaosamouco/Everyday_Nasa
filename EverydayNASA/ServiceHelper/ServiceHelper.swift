@@ -49,6 +49,22 @@ class ServiceHelper{
             }
         }
     }
+    
+    
+    func getAsteroidsOfTheSelectedDay(day: String = "01",month:String = "01", year:String = "1996",completinHandler: @escaping (_: PictureOfTheDay) -> Void){
+        let url = "https://api.nasa.gov/planetary/apod?api_key=Dg5wb0QRUZnRWwZEgPXgYtmShta6I16Bm33AI8I0&date=\(year)-\(month)-\(day)"
+        self.sessionManager.request(url, method: .get, parameters: [:], headers: ["Accept":"application/json"]).responseString{
+            response in
+            if let resp = response.result.value
+            {
+                let novoJson = JSON(parseJSON: resp)
+                //print(novoJson)
+                let ch = PictureOfTheDay(JsonRecebido: novoJson)
+                completinHandler(ch)
+                //print(resp)
+            }
+        }
+    }
     /*
     func getAllCharacters(page: String = "1", completinHandler: @escaping (_: CharacterResponse) -> Void){
         let url = "https://rickandmortyapi.com/api/character/?page=\(page)"

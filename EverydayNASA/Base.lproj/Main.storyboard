@@ -105,9 +105,9 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y9N-8L-sGw">
-                                <rect key="frame" x="0.0" y="334" width="375" height="100"/>
+                                <rect key="frame" x="0.0" y="334" width="375" height="70"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="aiX-45-S1R"/>
+                                    <constraint firstAttribute="height" constant="70" id="aiX-45-S1R"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Nasa" family="Nasa" pointSize="39"/>
                                 <state key="normal" title="Picture Of The Day">
@@ -118,9 +118,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M2b-QZ-oZz">
-                                <rect key="frame" x="0.0" y="434" width="375" height="100"/>
+                                <rect key="frame" x="0.0" y="404" width="375" height="70"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="h4f-AA-XSy"/>
+                                    <constraint firstAttribute="height" constant="70" id="h4f-AA-XSy"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Nasa" family="Nasa" pointSize="39"/>
                                 <state key="normal" title="Lots Of Asteroids">
@@ -141,14 +141,30 @@
                                     <action selector="goToSettings:" destination="lBB-Cr-SiU" eventType="touchUpInside" id="NXv-dV-SWc"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d5D-fZ-l34">
+                                <rect key="frame" x="0.0" y="474" width="375" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="LfS-te-UOT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Nasa" family="Nasa" pointSize="39"/>
+                                <state key="normal" title="Choose your image">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="goToChooseDate:" destination="lBB-Cr-SiU" eventType="touchUpInside" id="IbI-WY-W36"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="M2b-QZ-oZz" firstAttribute="leading" secondItem="KEe-ue-Iak" secondAttribute="leading" id="2aN-AH-X4H"/>
+                            <constraint firstItem="d5D-fZ-l34" firstAttribute="leading" secondItem="KEe-ue-Iak" secondAttribute="leading" id="4vW-Qs-J64"/>
                             <constraint firstItem="sKh-FM-QYY" firstAttribute="top" secondItem="KEe-ue-Iak" secondAttribute="top" constant="50" id="7qE-4O-fXS"/>
+                            <constraint firstItem="d5D-fZ-l34" firstAttribute="top" secondItem="M2b-QZ-oZz" secondAttribute="bottom" id="AGr-iF-ljL"/>
                             <constraint firstItem="6sS-oe-2hY" firstAttribute="top" secondItem="KEe-ue-Iak" secondAttribute="top" id="D1i-bw-HgU"/>
                             <constraint firstItem="KEe-ue-Iak" firstAttribute="trailing" secondItem="sKh-FM-QYY" secondAttribute="trailing" id="Dlo-Ri-xye"/>
                             <constraint firstItem="M2b-QZ-oZz" firstAttribute="top" secondItem="Y9N-8L-sGw" secondAttribute="bottom" id="EHH-5b-N8S"/>
+                            <constraint firstItem="KEe-ue-Iak" firstAttribute="trailing" secondItem="d5D-fZ-l34" secondAttribute="trailing" id="IVB-yi-dTC"/>
                             <constraint firstItem="KEe-ue-Iak" firstAttribute="trailing" secondItem="Y9N-8L-sGw" secondAttribute="trailing" id="Qo5-I6-vU2"/>
                             <constraint firstItem="Y9N-8L-sGw" firstAttribute="top" secondItem="sKh-FM-QYY" secondAttribute="bottom" constant="5" id="XQy-J5-Zlf"/>
                             <constraint firstItem="6sS-oe-2hY" firstAttribute="leading" secondItem="KEe-ue-Iak" secondAttribute="leading" id="bo9-qf-IeN"/>
@@ -174,6 +190,7 @@
                         <segue destination="tvV-Ph-icD" kind="show" identifier="segueToPic" id="rdF-fy-cm7"/>
                         <segue destination="iZu-2H-rb2" kind="show" identifier="goToAsteroids" id="Ov2-dY-V5B"/>
                         <segue destination="kBz-uZ-Uba" kind="show" identifier="segueToSettings" id="cg9-Xa-oST"/>
+                        <segue destination="3Q5-XF-bWs" kind="show" identifier="segueChooseDate" id="sgp-Nw-QT0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HcR-bn-RkM" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -640,10 +657,86 @@
             </objects>
             <point key="canvasLocation" x="364" y="-107.49625187406298"/>
         </scene>
+        <!--Choose Image View Controller-->
+        <scene sceneID="HXX-vx-Eog">
+            <objects>
+                <viewController id="3Q5-XF-bWs" customClass="ChooseImageViewController" customModule="EverydayNASA" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dcN-Oq-yft">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You Choose the image" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="re1-QT-hkO">
+                                <rect key="frame" x="0.0" y="80" width="375" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="1DT-HT-bHi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Nasa" family="Nasa" pointSize="31"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick a date to get the image of the day from" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ob-M1-mnk">
+                                <rect key="frame" x="20" y="160" width="335" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="WCj-vJ-Xa5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Q7j-sx-KHd">
+                                <rect key="frame" x="0.0" y="220" width="375" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="576078982.07080305">
+                                    <!--2019-04-04 13:56:22 +0000-->
+                                </date>
+                                <date key="minimumDate" timeIntervalSinceReferenceDate="-175006800">
+                                    <!--1995-06-16 11:00:00 +0000-->
+                                </date>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8EO-if-I3Q">
+                                <rect key="frame" x="0.0" y="436" width="375" height="231"/>
+                                <fontDescription key="fontDescription" name="Nasa" family="Nasa" pointSize="50"/>
+                                <state key="normal" title="Let's go">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="letsGoButton:" destination="3Q5-XF-bWs" eventType="touchUpInside" id="kF9-oX-opC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.081586690670000003" green="0.1143350439" blue="0.22570529510000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="8EO-if-I3Q" firstAttribute="bottom" secondItem="e3E-uX-vhr" secondAttribute="bottom" id="5kS-kY-aTF"/>
+                            <constraint firstItem="e3E-uX-vhr" firstAttribute="trailing" secondItem="re1-QT-hkO" secondAttribute="trailing" id="6bb-e7-pqX"/>
+                            <constraint firstItem="Q7j-sx-KHd" firstAttribute="top" secondItem="8Ob-M1-mnk" secondAttribute="bottom" constant="30" id="Rqk-OC-BaK"/>
+                            <constraint firstItem="e3E-uX-vhr" firstAttribute="trailing" secondItem="8Ob-M1-mnk" secondAttribute="trailing" constant="20" id="S7H-H3-ctP"/>
+                            <constraint firstItem="re1-QT-hkO" firstAttribute="leading" secondItem="e3E-uX-vhr" secondAttribute="leading" id="YoD-BC-U5H"/>
+                            <constraint firstItem="re1-QT-hkO" firstAttribute="top" secondItem="e3E-uX-vhr" secondAttribute="top" constant="16" id="emP-L3-tmN"/>
+                            <constraint firstItem="8EO-if-I3Q" firstAttribute="top" secondItem="Q7j-sx-KHd" secondAttribute="bottom" id="g2t-IU-DvH"/>
+                            <constraint firstItem="8Ob-M1-mnk" firstAttribute="leading" secondItem="e3E-uX-vhr" secondAttribute="leading" constant="20" id="kYH-sc-mHT"/>
+                            <constraint firstItem="8EO-if-I3Q" firstAttribute="trailing" secondItem="e3E-uX-vhr" secondAttribute="trailing" id="seQ-1g-ZZN"/>
+                            <constraint firstItem="Q7j-sx-KHd" firstAttribute="trailing" secondItem="e3E-uX-vhr" secondAttribute="trailing" id="u4U-nA-jXg"/>
+                            <constraint firstItem="8EO-if-I3Q" firstAttribute="leading" secondItem="e3E-uX-vhr" secondAttribute="leading" id="vy7-1K-NZc"/>
+                            <constraint firstItem="8Ob-M1-mnk" firstAttribute="top" secondItem="re1-QT-hkO" secondAttribute="bottom" constant="30" id="xHJ-eW-He0"/>
+                            <constraint firstItem="Q7j-sx-KHd" firstAttribute="leading" secondItem="e3E-uX-vhr" secondAttribute="leading" id="xlI-c5-thI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="e3E-uX-vhr"/>
+                    </view>
+                    <connections>
+                        <outlet property="datePicker" destination="Q7j-sx-KHd" id="NoT-5h-lCj"/>
+                        <segue destination="tvV-Ph-icD" kind="show" identifier="fromDateToPic" id="o4H-WN-FPo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fto-cJ-wbZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1436" y="-852"/>
+        </scene>
     </scenes>
     <resources>
         <image name="background_main" width="640" height="1138"/>
         <image name="nasa_logo" width="3400" height="1700"/>
         <image name="settings_img4" width="192" height="192"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="o4H-WN-FPo"/>
+    </inferredMetricsTieBreakers>
 </document>
