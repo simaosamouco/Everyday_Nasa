@@ -10,6 +10,7 @@ import UIKit
 
 class MenuViewController: UIViewController {
 
+    @IBOutlet weak var chooseImg: UIButton!
     @IBOutlet weak var lotsAsteroids: UIButton!
     @IBOutlet weak var picDay: UIButton!
     let date = Date()
@@ -42,6 +43,9 @@ class MenuViewController: UIViewController {
         
         let y = NSLocalizedString("button_lotsAsteroids", comment: "")
         lotsAsteroids.setTitle(y, for: .normal)
+        
+        let z = NSLocalizedString("button_ChooseImage", comment: "")
+        chooseImg.setTitle(z, for: .normal)
     }
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent

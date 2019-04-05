@@ -70,10 +70,10 @@
             </objects>
             <point key="canvasLocation" x="-3695" y="-22"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Custom Nav View Controller-->
         <scene sceneID="RcK-0f-9a7">
             <objects>
-                <navigationController id="Jf5-ss-0xo" sceneMemberID="viewController">
+                <navigationController id="Jf5-ss-0xo" customClass="CustomNavViewController" customModule="EverydayNASA" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="1BD-yo-cPN"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5Yc-d9-5iW">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -185,6 +185,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="chooseImg" destination="d5D-fZ-l34" id="abd-Su-YML"/>
                         <outlet property="lotsAsteroids" destination="M2b-QZ-oZz" id="o9O-IX-OjL"/>
                         <outlet property="picDay" destination="Y9N-8L-sGw" id="HlM-7B-k1Q"/>
                         <segue destination="tvV-Ph-icD" kind="show" identifier="segueToPic" id="rdF-fy-cm7"/>
@@ -599,16 +600,21 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="700"/>
                                                 <color key="backgroundColor" red="0.15294117647058825" green="0.17254901960784313" blue="0.30588235294117649" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </view>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vn6-w5-TnO">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="700"/>
+                                            </imageView>
                                         </subviews>
                                         <color key="backgroundColor" red="0.081586690665849657" green="0.1143350439133987" blue="0.22570529513888887" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="4wT-aF-OaV" secondAttribute="trailing" id="6iR-Ox-MaT"/>
                                             <constraint firstItem="Yy9-vs-JaI" firstAttribute="leading" secondItem="FUg-jX-yrK" secondAttribute="leading" id="70p-W8-BJ9"/>
                                             <constraint firstItem="AMl-uC-akx" firstAttribute="top" secondItem="4wT-aF-OaV" secondAttribute="bottom" constant="30" id="7lc-4F-khv"/>
+                                            <constraint firstAttribute="bottom" secondItem="Vn6-w5-TnO" secondAttribute="bottom" id="BWA-wc-5SA"/>
                                             <constraint firstItem="AMl-uC-akx" firstAttribute="leading" secondItem="FUg-jX-yrK" secondAttribute="leading" constant="10" id="C5u-16-cNF"/>
                                             <constraint firstItem="Thg-BV-WMj" firstAttribute="top" secondItem="AMl-uC-akx" secondAttribute="bottom" id="GjI-Y9-hRh"/>
                                             <constraint firstItem="Yy9-vs-JaI" firstAttribute="top" secondItem="FUg-jX-yrK" secondAttribute="top" id="J51-1T-HfL"/>
                                             <constraint firstItem="Ac5-Rl-vVt" firstAttribute="top" secondItem="Thg-BV-WMj" secondAttribute="bottom" id="JWp-cI-Qby"/>
+                                            <constraint firstItem="Vn6-w5-TnO" firstAttribute="leading" secondItem="FUg-jX-yrK" secondAttribute="leading" id="MU2-Aa-6We"/>
                                             <constraint firstItem="Thg-BV-WMj" firstAttribute="leading" secondItem="FUg-jX-yrK" secondAttribute="leading" id="NC3-r9-Rjh"/>
                                             <constraint firstAttribute="trailing" secondItem="Thg-BV-WMj" secondAttribute="trailing" id="Wjq-Ii-NFk"/>
                                             <constraint firstItem="4wT-aF-OaV" firstAttribute="top" secondItem="FUg-jX-yrK" secondAttribute="top" constant="10" id="X0A-MC-ah2"/>
@@ -619,7 +625,9 @@
                                             <constraint firstAttribute="trailing" secondItem="AMl-uC-akx" secondAttribute="trailing" constant="10" id="fAV-Gx-1fC"/>
                                             <constraint firstItem="Ac5-Rl-vVt" firstAttribute="leading" secondItem="FUg-jX-yrK" secondAttribute="leading" id="fbZ-pX-2CY"/>
                                             <constraint firstItem="4wT-aF-OaV" firstAttribute="leading" secondItem="FUg-jX-yrK" secondAttribute="leading" id="fso-7R-XMc"/>
+                                            <constraint firstAttribute="trailing" secondItem="Vn6-w5-TnO" secondAttribute="trailing" id="smr-Ee-gUA"/>
                                             <constraint firstAttribute="trailing" secondItem="Ac5-Rl-vVt" secondAttribute="trailing" id="uMR-Oy-HXG"/>
+                                            <constraint firstItem="Vn6-w5-TnO" firstAttribute="top" secondItem="FUg-jX-yrK" secondAttribute="top" id="v1h-MX-L2T"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -643,10 +651,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gLV-VV-ONC"/>
                     </view>
-                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <connections>
                         <outlet property="dateLabel" destination="Thg-BV-WMj" id="1IN-xt-OCH"/>
                         <outlet property="image" destination="4wT-aF-OaV" id="yjf-q7-LWE"/>
+                        <outlet property="imageBig" destination="Vn6-w5-TnO" id="Cc5-nA-2k9"/>
                         <outlet property="loadingView" destination="Yy9-vs-JaI" id="fE6-T8-UZz"/>
                         <outlet property="scrollView" destination="dRc-qw-pbO" id="q2r-Kh-wpx"/>
                         <outlet property="textViewEx" destination="Ac5-Rl-vVt" id="t8g-dn-U4r"/>
@@ -737,6 +746,6 @@
         <image name="settings_img4" width="192" height="192"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="o4H-WN-FPo"/>
+        <segue reference="rdF-fy-cm7"/>
     </inferredMetricsTieBreakers>
 </document>

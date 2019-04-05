@@ -28,9 +28,12 @@ class ChooseImageViewController: UIViewController {
         
         datePicker.setValue(UIColor.white, forKeyPath: "textColor")
         
+       
+        datePicker.maximumDate = Date()
+        
     }
 
-    
+    //8795 7900 9573
     
     @IBAction func letsGoButton(_ sender: Any) {
         let dateFormatter = DateFormatter()

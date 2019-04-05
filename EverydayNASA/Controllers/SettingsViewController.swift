@@ -22,6 +22,10 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         super.viewDidLoad()
         navigationController?.setNavigationBarHidden(false, animated: true)
         
+        /*self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.isTranslucent = true*/
+        
         // Connect data:
         self.pickerView.delegate = self
         self.pickerView.dataSource = self

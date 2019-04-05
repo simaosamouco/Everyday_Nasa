@@ -11,6 +11,7 @@
 		042978012253755E000F725C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 042978032253755E000F725C /* Localizable.strings */; };
 		045DFF32225267FA00D8B3D1 /* ColorsLolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045DFF31225267FA00D8B3D1 /* ColorsLolViewController.swift */; };
 		0475E06C225648C500C804D6 /* ChooseImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0475E06B225648C500C804D6 /* ChooseImageViewController.swift */; };
+		04A7A5B42257549B009B1719 /* CustomNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7A5B32257549B009B1719 /* CustomNavViewController.swift */; };
 		04DF8667224E349C00026B32 /* PerfilAsteroidViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DF8666224E349C00026B32 /* PerfilAsteroidViewController.swift */; };
 		04FB1D5B224CE5A30036E252 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB1D5A224CE5A30036E252 /* AppDelegate.swift */; };
 		04FB1D5D224CE5A30036E252 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB1D5C224CE5A30036E252 /* ViewController.swift */; };
@@ -59,6 +60,7 @@
 		0429780422537565000F725C /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		045DFF31225267FA00D8B3D1 /* ColorsLolViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsLolViewController.swift; sourceTree = "<group>"; };
 		0475E06B225648C500C804D6 /* ChooseImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseImageViewController.swift; sourceTree = "<group>"; };
+		04A7A5B32257549B009B1719 /* CustomNavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavViewController.swift; sourceTree = "<group>"; };
 		04DF8666224E349C00026B32 /* PerfilAsteroidViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilAsteroidViewController.swift; sourceTree = "<group>"; };
 		04FB1D57224CE5A30036E252 /* EverydayNASA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EverydayNASA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04FB1D5A224CE5A30036E252 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -204,6 +206,7 @@
 				045DFF31225267FA00D8B3D1 /* ColorsLolViewController.swift */,
 				0419E4402253B24B00E7ADF4 /* SettingsViewController.swift */,
 				0475E06B225648C500C804D6 /* ChooseImageViewController.swift */,
+				04A7A5B32257549B009B1719 /* CustomNavViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -434,6 +437,7 @@
 				04DF8667224E349C00026B32 /* PerfilAsteroidViewController.swift in Sources */,
 				04FB1D5B224CE5A30036E252 /* AppDelegate.swift in Sources */,
 				04FB1D9A224CF0FF0036E252 /* AsteroidsResponse.swift in Sources */,
+				04A7A5B42257549B009B1719 /* CustomNavViewController.swift in Sources */,
 				0475E06C225648C500C804D6 /* ChooseImageViewController.swift in Sources */,
 				04FB1D9B224CF1020036E252 /* CloseApproach.swift in Sources */,
 				04FB1D9E224CF1090036E252 /* ServiceHelper.swift in Sources */,
