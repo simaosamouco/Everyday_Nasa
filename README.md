@@ -8,5 +8,13 @@
  #### The point is to open the App once everyday and get your daily dose of awesome astronomy stuff!
  #### Along with that you can also see the objects that are closest to the Earth on that day.
  #### There's also another feature (and my favourite) that allows you to choose a date (all the way to june 16th 1995) and se the picture of that day.
+ 
+ |        |          |   |
+| ------------- |:-------------:| -----:|
+| <img src="images/Screen%20Shot%202019-04-08%20at%2014.54.23.png" height="500">    |<img src="images/Screen%20Shot%202019-04-08%20at%2014.55.46.png" height="500"> | <img src="images/Screen%20Shot%202019-04-08%20at%2014.57.12.png" height="500"> |
+| <img src="images/Screen%20Shot%202019-04-08%20at%2014.57.32.png" height="500">      |  <img src="images/Screen%20Shot%202019-04-08%20at%2014.59.23.png" height="500">     |   <img src="images/Screen Shot%202019-04-08%20at%2014.59.44.png" height="500">|
+
+ 
  ##### The app is available in Portuguese and English  with a few bugs here and there and you can also choose if you want the info in miles, km, meters, feet, etc... and this settings are saved in Users Default.
+ ##### This is not by a finished product and any sugestions are welcome :)
  
