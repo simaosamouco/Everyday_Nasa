@@ -168,7 +168,7 @@
                             <constraint firstItem="KEe-ue-Iak" firstAttribute="trailing" secondItem="Y9N-8L-sGw" secondAttribute="trailing" id="Qo5-I6-vU2"/>
                             <constraint firstItem="Y9N-8L-sGw" firstAttribute="top" secondItem="sKh-FM-QYY" secondAttribute="bottom" constant="5" id="XQy-J5-Zlf"/>
                             <constraint firstItem="6sS-oe-2hY" firstAttribute="leading" secondItem="KEe-ue-Iak" secondAttribute="leading" id="bo9-qf-IeN"/>
-                            <constraint firstItem="6sS-oe-2hY" firstAttribute="bottom" secondItem="KEe-ue-Iak" secondAttribute="bottom" id="iTI-Mb-MSW"/>
+                            <constraint firstItem="6sS-oe-2hY" firstAttribute="bottom" secondItem="eUr-Lg-osj" secondAttribute="bottom" id="iTI-Mb-MSW"/>
                             <constraint firstItem="KEe-ue-Iak" firstAttribute="trailing" secondItem="M2b-QZ-oZz" secondAttribute="trailing" id="m16-tv-bRk"/>
                             <constraint firstItem="Y9N-8L-sGw" firstAttribute="trailing" secondItem="KEe-ue-Iak" secondAttribute="trailing" id="nUa-B9-T4R"/>
                             <constraint firstItem="KEe-ue-Iak" firstAttribute="bottom" secondItem="NIz-c1-BGj" secondAttribute="bottom" constant="20" id="t6e-FH-eH8"/>
@@ -563,7 +563,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FUg-jX-yrK">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="700"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4wT-aF-OaV">
                                                 <rect key="frame" x="0.0" y="10" width="375" height="211"/>
@@ -597,11 +597,11 @@
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yy9-vs-JaI">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="700"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
                                                 <color key="backgroundColor" red="0.15294117647058825" green="0.17254901960784313" blue="0.30588235294117649" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </view>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vn6-w5-TnO">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="700"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
                                             </imageView>
                                         </subviews>
                                         <color key="backgroundColor" red="0.081586690665849657" green="0.1143350439133987" blue="0.22570529513888887" alpha="1" colorSpace="calibratedRGB"/>
@@ -621,7 +621,7 @@
                                             <constraint firstAttribute="bottom" secondItem="Yy9-vs-JaI" secondAttribute="bottom" id="X5p-SK-Vq3"/>
                                             <constraint firstAttribute="trailing" secondItem="Yy9-vs-JaI" secondAttribute="trailing" id="bLU-nr-PWA"/>
                                             <constraint firstAttribute="bottom" secondItem="Ac5-Rl-vVt" secondAttribute="bottom" id="cAA-fK-O9A"/>
-                                            <constraint firstAttribute="height" constant="700" id="d9a-Zk-Jfq"/>
+                                            <constraint firstAttribute="height" constant="800" id="d9a-Zk-Jfq"/>
                                             <constraint firstAttribute="trailing" secondItem="AMl-uC-akx" secondAttribute="trailing" constant="10" id="fAV-Gx-1fC"/>
                                             <constraint firstItem="Ac5-Rl-vVt" firstAttribute="leading" secondItem="FUg-jX-yrK" secondAttribute="leading" id="fbZ-pX-2CY"/>
                                             <constraint firstItem="4wT-aF-OaV" firstAttribute="leading" secondItem="FUg-jX-yrK" secondAttribute="leading" id="fso-7R-XMc"/>
@@ -683,17 +683,17 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick a date to get the image of the day from" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ob-M1-mnk">
-                                <rect key="frame" x="20" y="160" width="335" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick a date to get the image of the day from" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ob-M1-mnk">
+                                <rect key="frame" x="20" y="160" width="335" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="WCj-vJ-Xa5"/>
+                                    <constraint firstAttribute="height" constant="40" id="WCj-vJ-Xa5"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Q7j-sx-KHd">
-                                <rect key="frame" x="0.0" y="220" width="375" height="216"/>
+                                <rect key="frame" x="0.0" y="230" width="375" height="216"/>
                                 <date key="date" timeIntervalSinceReferenceDate="576078982.07080305">
                                     <!--2019-04-04 13:56:22 +0000-->
                                 </date>
@@ -702,7 +702,7 @@
                                 </date>
                             </datePicker>
                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8EO-if-I3Q">
-                                <rect key="frame" x="0.0" y="436" width="375" height="231"/>
+                                <rect key="frame" x="0.0" y="446" width="375" height="221"/>
                                 <fontDescription key="fontDescription" name="Nasa" family="Nasa" pointSize="50"/>
                                 <state key="normal" title="Let's go">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
@@ -746,6 +746,6 @@
         <image name="settings_img4" width="192" height="192"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="rdF-fy-cm7"/>
+        <segue reference="o4H-WN-FPo"/>
     </inferredMetricsTieBreakers>
 </document>

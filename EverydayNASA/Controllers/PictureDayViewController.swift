@@ -127,14 +127,22 @@ class PictureDayViewController: UIViewController, NVActivityIndicatorViewable {
     }
     @objc func smallImageTapped(tapGestureRecognizer: UITapGestureRecognizer){
         print("small image tapped")
-        imageBig.isHidden = false
+        //imageBig.isHidden = false
         loadingView.isHidden = false
+        UIView.transition(with: view, duration: 0.5, options: .transitionCrossDissolve, animations: {
+            self.imageBig.isHidden = false
+            self.navigationController?.setNavigationBarHidden(true, animated: false)
+        })
     }
     
     @objc func bigImageTapped(tapGestureRecognizer: UITapGestureRecognizer){
         print("big image tapped")
-        imageBig.isHidden = true
+        //imageBig.isHidden = true
         loadingView.isHidden = true
+        UIView.transition(with: view, duration: 0.5, options: .transitionCrossDissolve, animations: {
+            self.navigationController?.setNavigationBarHidden(false, animated: false)
+            self.imageBig.isHidden = true
+        })
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
