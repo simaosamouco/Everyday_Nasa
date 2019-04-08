@@ -3,6 +3,9 @@
  ### Application made for IOS using Swift.
  ### I made this App as an exercise to learn and get better at Swift
  
+ 
+ <img src="images/Screen%20Shot%202019-04-08%20at%2016.01.23.png" height="500"> 
+ 
  #### This is an Application that consumes the [NASA API](https://api.nasa.gov/index.html) where every day new information is available.
  #### Everyday NASA gives us a cool picture and a text talking about the picture and thats exactly what this app is all about.
  #### The point is to open the App once everyday and get your daily dose of awesome astronomy stuff!
