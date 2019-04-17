@@ -98,11 +98,7 @@ class ListAsteroidViewController: UIViewController, UITableViewDelegate, UITable
     func loadingAnimation(){
         let size = CGSize(width:170, height:170)
         startAnimating(size, message: "Loading", messageFont: UIFont(name: "Nasa", size: 40), type: NVActivityIndicatorType(rawValue: 30), color: UIColor.white, textColor: UIColor.white)
-       /* let screenSize: CGRect = UIScreen.main.bounds
-        let myView = UIView(frame: CGRect(x: 0, y: 0, width: screenSize.width, height: screenSize.height))
-        myView.backgroundColor = UIColor(red: 39/255, green:44/255, blue: 78/255, alpha:1)
-        self.view.addSubview(myView)*/
-        
+       
     }
     
 }
