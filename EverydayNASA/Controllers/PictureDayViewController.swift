@@ -15,7 +15,7 @@ class PictureDayViewController: UIViewController, NVActivityIndicatorViewable {
     //10,33+ 9,61
     
     @IBOutlet weak var imageBig: UIImageView!
-    @IBOutlet weak var textViewEx: UITextView!
+    //@IBOutlet weak var textViewEx: UITextView!
     @IBOutlet weak var loadingView: UIView!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var image: UIImageView!
@@ -24,6 +24,7 @@ class PictureDayViewController: UIViewController, NVActivityIndicatorViewable {
     var activityload: NVActivityIndicatorView!
     let tapRec = UITapGestureRecognizer()
     
+    @IBOutlet weak var explanationLabel: UILabel!
     var yearReceived:String!
     var monthReceived:String!
     var dayReceived: String!
@@ -62,7 +63,7 @@ class PictureDayViewController: UIViewController, NVActivityIndicatorViewable {
         //self.navigationController?.navigationBar.isTranslucent = false;
        // self.navigationController?.navigationBar.
         
-        textViewEx.isEditable = false
+        //textViewEx.isEditable = false
         
        /* view.addSubview(bigImage)
         bigImage.bringSubview(toFront: view)
@@ -112,7 +113,9 @@ class PictureDayViewController: UIViewController, NVActivityIndicatorViewable {
         titleLabel.text = pictureRecebida.title
         dateLabel.text = pictureRecebida.date
         //explanationLabel.text = pictureRecebida.explanation
-        textViewEx.text = pictureRecebida.explanation
+        //textViewEx.text = pictureRecebida.explanation
+        explanationLabel.text = pictureRecebida.explanation
+        imageBig.frame.size.height = UIScreen.main.bounds.height
         
         imageBig.isHidden = true
         

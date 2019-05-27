@@ -33,6 +33,7 @@ class ListAsteroidViewController: UIViewController, UITableViewDelegate, UITable
     }
     
     func receiveInfo(asteroidsReceived: AsteroidsResonse){
+       
         stopAnimating()
         myView.isHidden = true
         myView.removeFromSuperview()
@@ -40,11 +41,9 @@ class ListAsteroidViewController: UIViewController, UITableViewDelegate, UITable
         navigationController?.setNavigationBarHidden(false, animated: true)
         DispatchQueue.main.async {
             self.asteroidsToUse = asteroidsReceived
-            print("miss distance kilometers:  \(asteroidsReceived.results[0].closeApproach[0].missDistance.kilometers)")
-            
+            //print("miss distance kilometers:  \(asteroidsReceived.results[0].closeApproach[0].missDistance.kilometers)")
             self.tableView.reloadData()
         }
-        
         
     }
 
