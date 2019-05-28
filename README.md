@@ -23,6 +23,6 @@
  
  ##### The app is available in Portuguese and English  with a few bugs here and there and you can also choose if you want the info in miles, km, meters, feet, etc... and this settings are saved in Users Default.
  ##### This is not a finished product and any sugestions are welcome :)
- ####(The pictures above are not updated, I fixed some constraints the were getting on my nerves)
+ #### (The pictures above are not updated, I fixed some constraints that were getting on my nerves)
 
  
